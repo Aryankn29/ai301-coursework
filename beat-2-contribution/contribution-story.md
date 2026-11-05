@@ -1,4 +1,4 @@
-# Contribution: [Issue Title]
+# Contribution: Improve Radio and RadioCard Accessibility
 
 Path: `beat-2-contribution/contribution-story.md`
 
@@ -8,11 +8,10 @@ format criteria grade exactly that. Your course repo link is the whole submissio
 files and no evidence uploads are part of Assignment 5.
 
 **Contribution Number:** [1]
-**Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
-**Issue:** [GitHub issue link]
-**Pull Request:** [GitHub PR link, once opened]
+**Student:** Aryan Namboodiri
+**GitHub Username:** Aryankn29
+**Issue:** https://github.com/yamada-ui/yamada-ui/issues/7983 (also https://github.com/yamada-ui/yamada-ui/issues/7982)
+**Pull Request:** Pending
 
 One repository, built across units 5 to 8, telling the whole story of your real
 contribution. Fill it as you work, not at the end — the sections below ask for evidence that
@@ -55,10 +54,12 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Building and testing issue-scout (November 3–4, 2026)**
 
 [2-4 sentences: what you built (the scout, your strategy), what broke
 or fell short, what changed because of it.]
+
+I adapted my existing issue-selection skill into `issue-scout` and developed a strategy for finding manageable, testable open-source contributions. Initial scans surfaced issues that were already claimed, stale, or fixed by existing PRs, so I refined the selection process to verify issue discussions, competing PRs, and current source code. After narrowing the search to recent issues, I used the scout to evaluate five finalists and selected Yamada UI #7983 and #7982 because they appeared unclaimed, shared a likely root cause, and matched my TypeScript and React experience.
 
 **Unit 6: [one line on the tool work]**
 
@@ -91,13 +92,21 @@ you it held up. **Record the link to your claim comment in this section too.**
 Not claimed yet? Write `claim pending` and today's date where the link goes,
 and add the link the moment your claim lands.]
 
+I searched for recent good-first-issue contributions that matched my skills and could realistically be completed within the capstone timeline. My initial searches surfaced several promising issues, but further investigation revealed competing contributors or fixes already implemented. I narrowed the search to newer issues and ran my scout against five finalists, all of which passed its rubric. I selected Yamada UI's Radio #7983 and RadioCard #7982 because they appear to share an accessibility bug involving `aria-readonly`, potentially allowing one focused fix with regression tests for both components.
+
+I wanted to contribute to a maintained React component library while improving my understanding of accessibility testing. The scouting process showed that an open issue is not necessarily unfinished, so verifying current code and PR history became an important part of my selection strategy.
+
+**Claim comments:**
+
+- [Radio #7983](https://github.com/yamada-ui/yamada-ui/issues/7983#issuecomment-6624567860)
+- [RadioCard #7982](https://github.com/yamada-ui/yamada-ui/issues/7982#issuecomment-6624577538)
+
 **Toolkit**
 
-- Tool: issue-scout (your scout: your search strategy, your rubric),
-  and how you used it
-- What it produced: [the scan and its verdict on this issue, described]
-- Difficulties: [where it fell short, or "none met" if none did]
-- What changed: [what you patched or would update, or "nothing"]
+- Tool: `issue-scout`, a Claude Code skill using my search strategy and six-check rubric to evaluate GitHub issues.
+- What it produced: Initial scans and evaluations of five finalists, including accepted verdicts for both selected Yamada UI issues and identification of their likely shared root cause.
+- Difficulties: Initial results included claimed issues, stale listings, and bugs already addressed by existing or unlinked PRs.
+- What changed: I refined my search strategy to prioritize recent issues and verify contributor activity, PR history, and current source code before making a selection.
 
 ---
 
